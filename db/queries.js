@@ -12,12 +12,13 @@ const employee = {
     });
   },
   
-  addOne: (first, last, role, manager) => {
+  addOne: (cb, first, last) => {
     let sql =
-      `INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ('${first}', '${last}', '${role});`
+      `INSERT INTO employee (first_name, last_name) VALUES ('${first}', '${last}');`
     connection.query(sql, function (err, result) {
       if (err) throw err;
       console.log("1 record inserted");
+      cb(null, result);
     });
   },
 };

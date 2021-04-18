@@ -41,5 +41,11 @@ THEN I am prompted to select an employee to update and their new role and this i
 Dependencies: Express, Inquirer, and MySQL.
  
 
-## Licenses 
-:MIT:
+## Video Explainer:
+(https://www.youtube.com/watch?v=W60GXsUr3MY)
+
+## License
+
+![license](https://img.shields.io/badge/License-MIT%20License-blue?style=for-the-badge)
+
+
